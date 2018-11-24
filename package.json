@@ -1,0 +1,23 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "'node interface'",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "serve": "node server.js"
+  },
+  "author": "displayLi",
+  "license": "ISC",
+  "devDependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "nodemon": "^1.18.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
