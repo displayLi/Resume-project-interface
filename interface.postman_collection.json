@@ -1,0 +1,1022 @@
+{
+	"info": {
+		"_postman_id": "667a5b02-c071-4e8d-8028-6d7b8c4184da",
+		"name": "interface",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "张泽杰",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@qq.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDE5NTMsImV4cCI6MTU0MjkwNTU1M30.laR25UoQGeHY6dAL6c3Jn2kssOdQdQtwP_LAo-diokI",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8083/user/current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"user",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDExMDgsImV4cCI6MTU0MjkwNDcwOH0.3OpCrNOjHXtvl9kIT45mQK6pr1Rk0gTs3rmOcZcyqos",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "handle",
+							"value": "张泽杰",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "不知道是啥",
+							"type": "text"
+						},
+						{
+							"key": "website",
+							"value": "http://www.zzj.com",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "上海",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "在职",
+							"type": "text"
+						},
+						{
+							"key": "bio",
+							"value": "不知道是啥",
+							"type": "text"
+						},
+						{
+							"key": "githubusername",
+							"value": "zzj.github.io",
+							"type": "text"
+						},
+						{
+							"key": "skills",
+							"value": "js,vue,html,python",
+							"type": "text"
+						},
+						{
+							"key": "wechat",
+							"value": "zzj_io",
+							"type": "text"
+						},
+						{
+							"key": "QQ",
+							"value": "zzj",
+							"type": "text"
+						},
+						{
+							"key": "tengxunkt",
+							"value": "腾讯课堂",
+							"description": "\b",
+							"type": "text"
+						},
+						{
+							"key": "wangyikt",
+							"value": "网易云课堂",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "experience",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDMwMzEzOTQsImV4cCI6MTU0MzAzNDk5NH0.tf0pl-N6rPNUupXqVZ2t3hzX9mACpSK4zS6RZtBZG8g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "current",
+							"value": "\bfalse",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "种地开发",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "web前端架构师",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "上海",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "2016-01-01",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "2018-01-01",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "工作消极",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDExMDgsImV4cCI6MTU0MjkwNDcwOH0.3OpCrNOjHXtvl9kIT45mQK6pr1Rk0gTs3rmOcZcyqos",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "school",
+							"value": "\b家里蹲学院",
+							"type": "text"
+						},
+						{
+							"key": "degree",
+							"value": "软件工程土木系",
+							"type": "text"
+						},
+						{
+							"key": "fieldofstudy",
+							"value": "博士后",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "2010-09-06",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "2014-06-07",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "在校期间表现良好，成绩优异",
+							"type": "text"
+						},
+						{
+							"key": "current",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryall",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDExMDgsImV4cCI6MTU0MjkwNDcwOH0.3OpCrNOjHXtvl9kIT45mQK6pr1Rk0gTs3rmOcZcyqos",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "flag",
+							"value": "findAll",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/queryall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"queryall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handlequery",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDExMDgsImV4cCI6MTU0MjkwNDcwOH0.3OpCrNOjHXtvl9kIT45mQK6pr1Rk0gTs3rmOcZcyqos",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "handle",
+							"value": "张泽杰",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/handlequery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"handlequery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "idget",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDExMDgsImV4cCI6MTU0MjkwNDcwOH0.3OpCrNOjHXtvl9kIT45mQK6pr1Rk0gTs3rmOcZcyqos",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "5bf6cd66bb2b7110841044bd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/idget",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"idget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_experience",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDI4OTk1NTcsImV4cCI6MTU0MjkwMzE1N30.MnB8n3YqrRZb7sVujwh3QO50mgFfAlszwCaf-laz5-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "delId",
+							"value": "5bf6ce58bb2b7110841044bf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/del_experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"del_experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_education",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDI4OTk1NTcsImV4cCI6MTU0MjkwMzE1N30.MnB8n3YqrRZb7sVujwh3QO50mgFfAlszwCaf-laz5-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "delId",
+							"value": "5bf6c90be649ef0fa4ff34a7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/del_education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"del_education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_all",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjZjZDY2YmIyYjcxMTA4NDEwNDRiZCIsInRpbWUiOiIyMDE4LTExLTIyVDE1OjM4OjE0LjMxNloiLCJpYXQiOjE1NDI5MDE5NTMsImV4cCI6MTU0MjkwNTU1M30.laR25UoQGeHY6dAL6c3Jn2kssOdQdQtwP_LAo-diokI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "delAllId",
+							"value": "5bf6c7f9e2d2010f7107e42a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/profile/del_all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"profile",
+						"del_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNjc1MDksImV4cCI6MTU0MzA3MTEwOX0.raWi2m9eY5KpXUBQOLDDj8g5yOr7z29dXvG-ud4nJjI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "hello world display li",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all_getComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNzUwMzQsImV4cCI6MTU0MzA3ODYzNH0.19oDfVPuWD5JCxTJa7NjN7qBdLIwfqAzai8RF-ZXr_8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "allComment",
+							"value": "getAll",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/all_getComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"all_getComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNjgxOTAsImV4cCI6MTU0MzA3MTc5MH0.mApHnA7HynTrbOipWSpiiuPLu4vVE_pRrNowep2eEYg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "5bf6cd66bb2b7110841044bd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/getUserComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"getUserComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commentId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNjY3OTgsImV4cCI6MTU0MzA3MDM5OH0.RZzFkAy2D3UDlFrOzoLeZNQLaP9VAOMWekOXFAZ5wjg",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8083/posts/commentId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"commentId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del_comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNjY0MDQsImV4cCI6MTU0MzA3MDAwNH0.UH3xusDkZ_gkHp79rMVJmkJoqWVlUgUWXcoyv5CzLW8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "del_id",
+							"value": "5bf952e5ddbafd11ecb170ba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/del_comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"del_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "likes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNzE4MDcsImV4cCI6MTU0MzA3NTQwN30.RpN4Ajtz1-jIGYbGYEvhL-68oEh8_zfbJ5GepfWrrSk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "likeIds",
+							"value": "5bf9624e4c91651bca4a2725",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/likes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unlikes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNzExMDEsImV4cCI6MTU0MzA3NDcwMX0.RXsF1xBcXZlZxme93_opMkQB2Slga4y1MEkI2_OjuG0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "unlikeId",
+							"value": "5bf9624e4c91651bca4a2725",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/unlikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"unlikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commentChild",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNzQxMjAsImV4cCI6MTU0MzA3NzcyMH0.807Jv3zWErSv8R3iJRk2gYRTyzUsOeXMDKjE6bibJUc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "hello world zhangzijie",
+							"type": "text"
+						},
+						{
+							"key": "commentIds",
+							"value": "5bf95343ddbafd11ecb170bb",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/commentChild",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"commentChild"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commentRemoveChild",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViZjQxNjg5NzQwYmU0MDU5MTg1YTZhOCIsInRpbWUiOiIyMDE4LTExLTIwVDE0OjEzOjI5LjczOVoiLCJpYXQiOjE1NDMwNzYzOTgsImV4cCI6MTU0MzA3OTk5OH0.VO553TaKkNz53CoP2astzcs3mhA-BM5SxrOdrLnCwQo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commentIds",
+							"value": "5bf95343ddbafd11ecb170bb",
+							"type": "text"
+						},
+						{
+							"key": "childId",
+							"value": "5bf971808bc0aa1f746c277c",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/posts/commentRemoveChild",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posts",
+						"commentRemoveChild"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
