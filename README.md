@@ -35,7 +35,7 @@
 
 ```
 * 注册用户信息
-* Address: http://api.link97.com:8084/user/register
+* Address: http://api.link97.com:8086/user/register
 * 参数: name、email、password
 * Type: String 
 * required: true
@@ -65,7 +65,7 @@
 
 ```
 * 用户登录
-* Address: http://api.link97.com:8084/user/login
+* Address: http://api.link97.com:8086/user/login
 * 参数: email、password
 * Type: String 
 * required: true
@@ -91,7 +91,7 @@
 
 ```
 * token验证
-* Address: http://api.link97.com:8084/user/current
+* Address: http://api.link97.com:8086/user/current
 * 参数: null
 * Type: null 
 * required: false
@@ -120,7 +120,7 @@
 
 ```
 * 添加个人信息
-* Address: http://api.link97.com:8084/profile/add
+* Address: http://api.link97.com:8086/profile/add
 * 参数: handle、company、website、location、status、bio、githubusername、skills、wechat、QQ、tengxunkt、wangyikt
 * Type:String
 * required: true
@@ -169,7 +169,7 @@
 
 ```
 * 添加个人工作经历
-* Address: http://api.link97.com:8084/profile/experience
+* Address: http://api.link97.com:8086/profile/experience
 * 参数: title、company、location、from、to、description
 * Type:String
 * 特殊参数: current 布尔值
@@ -232,7 +232,7 @@
 
 ```
 * 添加个人教育经历
-* Address: http://api.link97.com:8084/profile/education
+* Address: http://api.link97.com:8086/profile/education
 * 参数: school、degree、fieldofstudy、from、to、description
 * Type:String
 * 特殊参数: current 布尔值
@@ -304,7 +304,7 @@
 
 ```
 * 查看所有简历
-* Address: http://api.link97.com:8084/profile/queryall
+* Address: http://api.link97.com:8086/profile/queryall
 * 参数: {flag:'findAll'}  findAll  --> 固定死的必须传这个
 * Type:String
 * required: true
@@ -382,7 +382,7 @@
 
 ```
 * 查看单个简历
-* Address: http://api.link97.com:8084/profile/idget
+* Address: http://api.link97.com:8086/profile/idget
 * 参数: {user_id:'5bf56a8f902331060d501cff'}
 * Type:String
 * required: true
@@ -458,7 +458,7 @@
 
 ```
 * 根据用户名(handle)查询
-* Address: http://api.link97.com:8084/profile/handlequery
+* Address: http://api.link97.com:8086/profile/handlequery
 * 参数: {handle:'handle(用户名)'}
 * Type:String
 * required: true
@@ -533,7 +533,7 @@
 
 ```
 * 删除单个工作经历
-* Address: http://api.link97.com:8084/profile/del_experience
+* Address: http://api.link97.com:8086/profile/del_experience
 * 参数: {delId:_id }
 * Type:String
 * required: true
@@ -567,7 +567,7 @@
 
 ```
 * 删除单个教育经历
-* Address: http://api.link97.com:8084/profile/del_education
+* Address: http://api.link97.com:8086/profile/del_education
 * 参数: {delId:_id }
 * Type:String
 * required: true
@@ -602,7 +602,7 @@
 
 ```
 * 删除当前用户所有信息
-* Address: http://api.link97.com:8084/profile/del_all
+* Address: http://api.link97.com:8086/profile/del_all
 * 参数: {delAllId:_id }
 * Type:String
 * required: true
@@ -665,7 +665,7 @@
 
 ```
 * 用户评论接口 
-* Address: http://api.link97.com:8084/posts/comment
+* Address: http://api.link97.com:8086/posts/comment
 * 参数: text
 * Type:String
 * required: true
@@ -699,7 +699,7 @@
 
 ```
 * 用户评论接口 
-* Address: http://api.link97.com:8084/posts/all_getComment
+* Address: http://api.link97.com:8086/posts/all_getComment
 * 参数: {allComment:'getAll'} 
 * Type:String
 * required: true
@@ -734,7 +734,7 @@
 
 ```
 * 查询当前用户所有评论的接口 
-* Address: http://api.link97.com:8084/posts/getUserComment
+* Address: http://api.link97.com:8086/posts/getUserComment
 * 参数: null
 * Type: null  
 * required: false
@@ -769,7 +769,7 @@
 
 ```
 * 根据id查询当前评论的接口 
-* Address: http://api.link97.com:8084/posts/commentId
+* Address: http://api.link97.com:8086/posts/commentId
 * 参数: {commentId:'id'}
 * Type: String  
 * required: true
@@ -802,7 +802,7 @@
 
 ```
 * 根据评论id删除当前评论接口
-* Address: http://api.link97.com:8084/posts/del_comment
+* Address: http://api.link97.com:8086/posts/del_comment
 * 参数: {del_id:'id'}
 * Type: String  
 * required: true
@@ -835,7 +835,7 @@
 
 ```
 * 当前用户点赞接口
-* Address: http://api.link97.com:8084/posts/likes
+* Address: http://api.link97.com:8086/posts/likes
 * 参数: {likeIds:'id'}
 * Type: String  
 * required: true
@@ -877,7 +877,7 @@
 
 ```
 * 当前用户取消点赞接口
-* Address: http://api.link97.com:8084/posts/unlikes
+* Address: http://api.link97.com:8086/posts/unlikes
 * 参数: {unlikeId:'id'}
 * Type: String  
 * required: true
@@ -915,7 +915,7 @@
 
 ```
 * 当前用户回复其他用户的评论
-* Address: http://api.link97.com:8084/posts/commentChild
+* Address: http://api.link97.com:8086/posts/commentChild
 * 参数: {commentIds:'id', text:'字符串'}
 * Type: String  
 * required: true
@@ -961,7 +961,7 @@
 
 ```
 * 当前用户回复其他用户的评论
-* Address: http://api.link97.com:8084/posts/commentRemoveChild
+* Address: http://api.link97.com:8086/posts/commentRemoveChild
 * 参数: {commentIds:'id', childId:'要删除的id'}
 * Type: String  
 * required: true
